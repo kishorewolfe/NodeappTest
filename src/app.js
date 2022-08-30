@@ -81,6 +81,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("SERVER IS LISTEING ON 3003 PORT ")
 })
