@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css"> 
+    <link rel="icon" href="/img/iconImage.png">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-content">
+         <h1>
+            {{>Header}}
+
+    </h1>
+    {{title}}
+    <p>Lets Begin to Learn and Rock</p>
+    <form>
+        <label>Type Your Long and Lat</label>
+        <input type="text" placeholder="please Type Your Address"/>
+        <button>SUBMIT</button>
+    </form>
+    <div>
+        <p id="message-1">
+
+        </p>
+        <p id="message-2">
+
+        </p>
+         <p id="message-3">
+
+        </p>
+        <img src=" " id="img1"/>
+    </div>
+    
+  
+    </div>
+       {{>footer}}
+
+   
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>
