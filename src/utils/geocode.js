@@ -1,7 +1,7 @@
 const request = require('request');
 
  const geoCode =(address,callback)=>{
-    const url="http://api.weatherstack.com/current?access_key=14bc2872132fd167bbbd077014d7f78b&query=" +address;
+    const url="/current?access_key=14bc2872132fd167bbbd077014d7f78b&query=" +address;
     request({url:url},(error,response)=>{
         const data = JSON.parse(response.body)
 

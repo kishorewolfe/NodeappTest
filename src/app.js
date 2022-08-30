@@ -9,7 +9,7 @@ const viewPath= path.join(__dirname,'../templates/views')
 const partialsPath =path.join(__dirname,'../templates/partials')
 app.use(express.static(publicDirectory))
 hbs.registerPartials(partialsPath)
-
+const port = process.env.PORT || 3000
 app.set('view engine','hbs') 
 app.set('views',viewPath)
 
@@ -81,6 +81,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3003,()=>{
+app.listen(3000,()=>{
     console.log("SERVER IS LISTEING ON 3003 PORT ")
 })
